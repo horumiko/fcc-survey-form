@@ -15,6 +15,7 @@
 body{
     color: var(--color-white);
     font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
 }
 body::before {
     content: '';
@@ -45,12 +46,13 @@ body::before {
     margin-top: 10vh;
 }
 #title{
-    font-size: 3vw;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 1.2;
 }
 
 #description{
+    font-size: 1.125rem;
     font-style: italic;
     font-weight: 200;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
@@ -59,5 +61,45 @@ body::before {
 #main{
     width: 100vw;
     height: 100vh;
+
+    display: flex;
+    justify-content: center;
 }
 
+#survey-form{
+    background: var(--color-darkblue-alpha);
+    padding: 2.5rem 0.625rem;
+    border-radius: 0.25rem;
+    margin-top: 30px;
+    width: 700px;
+    height: 800px;
+
+    padding: 40px 40px;
+}
+
+.field{
+    display: flex;
+    flex-direction: column;
+}
+
+.label{
+    order: 1;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.input{
+    order: 2;
+
+    width: 100%;
+    height: 2.375rem;
+
+    font-size: 1rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+
+    margin-bottom: 20px;
+}
